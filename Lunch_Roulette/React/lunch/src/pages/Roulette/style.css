@@ -1,0 +1,127 @@
+.roulette {
+    transition: all ease 1s;
+    background-color: transparent;
+    margin: 0 0 0 0;
+    font-family: "DOSPilgiMedium", serif;
+}
+
+.title {
+    font-family: "DOSPilgiMedium", serif;
+}
+
+.goMove {
+    transform: rotate(1800deg);
+    transition: all ease-in-out 2s;
+}
+
+h2 {
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+.roll {
+    position: absolute;
+    padding: 1rem 2rem;
+    top: 49%;
+    border: 3px solid white;
+    color: #6e6e6e;
+    font-family: "DOSPilgiMedium", serif;
+    text-decoration: none;
+    font-weight: 600;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.button_section{
+    position: relative;
+    right: 15%;
+    width: 150%;
+}
+
+.excel_modal{
+    font-family: "DOSPilgiMedium", serif;
+    font-Size: 25px;
+    width: 35%;
+    float: left;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ababab;
+    border-radius: 10px;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    cursor: pointer;
+    /*margin-right: 5%;*/
+}
+
+.spin_button {
+    font-family: "DOSPilgiMedium", serif;
+    font-Size: 25px;
+    width: 25%;
+    float: left;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ababab;
+    border-radius: 10px;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 5%;
+
+}
+
+.edit_menu {
+    float: left;
+    font-family: "DOSPilgiMedium", serif;
+    font-Size: 25px;
+    width: 25%;
+
+    padding: 10px 20px;
+    border: none;
+    background-color: #ababab;
+    border-radius: 10px;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 5%;
+
+}
+
+button:hover {
+    background-color: #f27008;
+}
+
+.check_button{
+    appearance: none;
+    border: 1.5px solid gainsboro;
+    border-radius: 0.35rem;
+    width: 1.5rem;
+    height: 1.5rem;
+ }
+
+.check_button:checked{
+    border-color: transparent;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3e%3c/svg%3e");
+    background-size: 100% 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #f27008;
+}
+
+.save_button{
+    /*margin-top: 5%;*/
+    font-family: "DOSPilgiMedium", serif;
+    font-size: 14px;
+    padding: 5px 20px;
+    border: none;
+    background-color: #ababab;
+    border-radius: 10px;
+    color: white;
+    font-style: italic;
+    font-weight: 200;
+    cursor: pointer;
+    margin-left: 3%;
+}
+

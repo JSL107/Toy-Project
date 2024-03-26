@@ -1,0 +1,29 @@
+.form {
+    margin: 1rem 0;
+}
+
+.form input{
+    width: 20rem;
+}
+
+.form label {
+    width: 5rem;
+}
+
+.form button {
+    border: 1px solid #e55039;
+    background-color: #e55039;
+    width: 6rem;
+}
+
+.form button:hover,
+.form button:active {
+    background-color: white;
+    border: 2px solid #e55039;
+    color: #e55039;
+}
+
+.order-close {
+    background-color: white;
+    color: #e55039;
+}

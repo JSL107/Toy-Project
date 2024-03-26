@@ -1,0 +1,38 @@
+.title h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 10px;
+    margin-left: 70%;
+    cursor: pointer;
+    font-size: 2vw;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end; /* 아이템을 우측으로 정렬 */
+    align-items: center;
+    padding: 0 20px;
+    background-color: #333;
+    color: white;
+}
+
+.login, .mypage, .basket, .board {
+    margin: 0 10px;
+    font-size: 0.8vw;
+    cursor: pointer;
+}
+
+.reservation {
+    margin: 0 20px;
+    font-size: 0.8vw;
+    cursor: pointer;
+}
+
+.link_header {
+    color: white;
+    text-decoration: none;
+}
+
+

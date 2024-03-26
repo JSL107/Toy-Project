@@ -1,0 +1,45 @@
+/* board.css */
+.boardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.boardPaper {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.boardHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.backButton {
+    margin-right: 10px;
+}
+
+.boardTitle {
+    color: #333333;
+}
+
+.boardImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.boardContext {
+    margin-top: 20px;
+    color: #666666;
+}
+
+.boardDate {
+    color: #999999;
+}

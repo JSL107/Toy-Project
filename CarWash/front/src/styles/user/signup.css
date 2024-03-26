@@ -1,0 +1,128 @@
+/* styles/user/signup.css */
+.sign_up {
+    /*background-size: c;*/
+    background: url("https://images.pexels.com/photos/1557228/pexels-photo-1557228.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center/cover;
+    /*height: 110vh;*/
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    padding-top: 20px;
+    margin: 0px auto 10px;
+
+}
+
+.join__form {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px 50px 30px 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    background-color: rgba(249, 249, 249, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.join__form div {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #555;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.checkbox-label {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.button {
+    display: block;
+    width: 106%;
+    padding: 14px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6b6b;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e05151;
+}
+
+
+.password-match-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.password-match-error {
+    margin-left: 10px;
+    font-size: 12px;
+    color: red;
+}
+
+.match {
+    border-color: green;
+}
+
+.not-match {
+    border-color: red;
+}
+
+/* 반응형 스타일링 */
+@media screen and (max-width: 500px) {
+    .join__form {
+        padding: 20px;
+    }
+
+    .input,
+    .button {
+        padding: 10px;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+}
+
+.email_confirm {
+    display: block;
+    border: none;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: #ff6b6b;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.email_confirm:hover {
+    background-color: #e05151;
+}
+

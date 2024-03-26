@@ -1,0 +1,36 @@
+.row {
+    margin-left: 20px;
+    color: white;
+}
+
+.row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar {/* 모든 브라우저 설정 */
+    display: none;
+}
+
+.row__poster {
+    width: 100%; /* 이미지 width 100% */
+    max-height: 100px; /* 이미지 최대 높이 */
+    object-fit: contain; /* 이미지 비율 유지 */
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.row__poster:hover {
+    transform: scale(1.08);
+}
+
+.row__posterLarge {
+    max-height: 250px;
+}
+
+.row__posterLarge:hover {
+    transform: scale(1.09);
+    opacity: 1;
+}

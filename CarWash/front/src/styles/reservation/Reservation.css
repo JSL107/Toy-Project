@@ -1,0 +1,156 @@
+/* Reservation.css */
+
+.reservation-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.reservation-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="carType"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.time-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.time-buttons button {
+    width: calc(33.33% - 8px);
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.time-buttons button.active {
+    background-color: #0056b3;
+}
+
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 추가적인 스타일링을 여기에 추가하세요. */
+
+/* 예약 내용을 가운데 정렬 */
+.time-alert {
+    text-align: center;
+}
+
+/* DatePicker 전체를 감싸는 컨테이너에 스타일 적용 */
+.datepicker-container {
+    width: 300px; /* 원하는 너비로 조절하세요 */
+}
+
+/* DatePicker 날짜 선택 영역 스타일 */
+.react-datepicker__day-names,
+.react-datepicker__week {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    /*background-color: #f0f0f0;*/
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+/* DatePicker 각 날짜 셀 스타일 */
+.react-datepicker__day {
+    width: 5.5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+
+/* DatePicker 현재 월, 날짜 스타일 */
+.react-datepicker__current-month,
+.react-datepicker__day-name {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+/* DatePicker 시간 선택 필드 스타일 */
+.react-datepicker__time-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.react-datepicker__time-list-item {
+    width: 100%;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.react-datepicker__time-list-item:hover {
+    background-color: #ddd;
+}
+
+.details {
+    height: 10rem;
+    resize: none;
+    grid-auto-flow: revert;
+}
