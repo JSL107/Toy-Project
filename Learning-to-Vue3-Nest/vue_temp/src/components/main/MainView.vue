@@ -5,7 +5,7 @@ import FooterView from "@/components/common/FooterView.vue";
 </script>
 
 <template>
-  <div>
+  <div class="main">
     <HeaderView/>
     <p>MainPage</p>
     <FooterView/>
@@ -13,5 +13,9 @@ import FooterView from "@/components/common/FooterView.vue";
 </template>
 
 <style scoped>
-
+.main {
+  background-color: #EADFB4;
+  width: 100%;
+  height: ;
+}
 </style>

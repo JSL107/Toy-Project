@@ -3,11 +3,15 @@
 </script>
 
 <template>
-  <div>
+  <footer class="footer">
     <p>Footer</p>
-  </div>
+  </footer>
 </template>
 
 <style scoped>
-
+.footer {
+  width: 100%;
+  background-color: #9BB0C1;
+  height: 10vh;
+}
 </style>
