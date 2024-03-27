@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {ref} from 'vue';
-import {Expand} from '@element-plus/icons-vue'
+import {Expand, ForkSpoon, Calendar} from '@element-plus/icons-vue'
 import {useRouter} from "vue-router";
 
 const drawer = ref(false);
@@ -19,8 +19,18 @@ let router = useRouter();
           <img src="../../assets/logo/logo-removebg-preview.png" alt="" class="drawer-logo" @click="drawer =false"/>
         </template>
         <template #default>
-          <p class="lunch-roulette" @click="router.push('/lunch'); drawer=false">점심 뭐먹지</p>
-          <p class="vacation" @click="router.push('/vacation');  drawer=false">내 남은 휴가는</p>
+          <div class="lunch-div">
+            <el-icon :size="22">
+              <ForkSpoon/>
+            </el-icon>
+            <p class="lunch-roulette" @click="router.push('/lunch'); drawer=false">점심 뭐먹지</p>
+          </div>
+          <div class="vacation-div">
+            <el-icon :size="22">
+              <Calendar/>
+            </el-icon>
+            <p class="vacation" @click="router.push('/vacation');  drawer=false">내 남은 휴가는</p>
+          </div>
         </template>
       </el-drawer>
     </div>
@@ -31,6 +41,14 @@ let router = useRouter();
 </template>
 
 <style scoped>
+.lunch-div {
+  display: flex;
+}
+
+.vacation-div {
+  display: flex;
+}
+
 .drawer-header {
   display: inline-block;
   background-color: #F6995C;
@@ -53,7 +71,7 @@ let router = useRouter();
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 20px;
-
+  margin-left: 8px;
 }
 
 .lunch-roulette:hover {
@@ -67,6 +85,7 @@ let router = useRouter();
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 20px;
+  margin-left: 8px;
 }
 
 .vacation:hover {
