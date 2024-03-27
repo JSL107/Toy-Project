@@ -12,6 +12,11 @@
 .footer {
   width: 100%;
   background-color: #9BB0C1;
-  height: 10vh;
+  height: 130px;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 </style>

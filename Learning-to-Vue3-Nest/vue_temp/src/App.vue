@@ -1,15 +1,25 @@
 <template>
   <div id="app">
+    <HeaderView/>
     <router-view/>
+    <FooterView/>
   </div>
+
 </template>
 
 <script setup lang="ts">
+import HeaderView from "@/components/common/HeaderView.vue";
+import FooterView from "@/components/common/FooterView.vue";
 </script>
 
 <style>
 body {
   margin: 0 0 0 0;
+}
+
+header .el-drawer__header {
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -24,7 +34,7 @@ body {
 
 #app {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
 }
 </style>

@@ -1,5 +1,6 @@
 import {createWebHistory, createRouter} from "vue-router";
-import VacationCounter from "@/components/vacation/VacationCounter.vue";
+import VacationCounterView from "@/components/vacation/VacationCounterView.vue";
+import LunchRouletteView from "@/components/roulette/LunchRouletteView.vue";
 import MainView from "@/components/main/MainView.vue";
 
 const routes = [
@@ -9,9 +10,14 @@ const routes = [
         component: MainView,
     },
     {
-        path: "/counter",
-        name: "VacationCounter",
-        component: VacationCounter,
+        path: "/vacation",
+        name: "VacationCounterView",
+        component: VacationCounterView,
+    },
+    {
+        path: "/lunch",
+        name: "LunchRouletteView",
+        component: LunchRouletteView,
     },
 ];
 

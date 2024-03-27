@@ -1,21 +1,20 @@
 <script setup lang="ts">
-
-import HeaderView from "@/components/common/HeaderView.vue";
-import FooterView from "@/components/common/FooterView.vue";
 </script>
 
 <template>
   <div class="main">
-    <HeaderView/>
-    <p>MainPage</p>
-    <FooterView/>
   </div>
 </template>
 
 <style scoped>
 .main {
-  background-color: #EADFB4;
-  width: 100%;
-  height: ;
+  width: auto;
+  height: 78vh;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
 }
 </style>

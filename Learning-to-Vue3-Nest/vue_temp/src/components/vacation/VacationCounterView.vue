@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>HelloWorld!!!!!!!!!!!</p>
+    <p>휴가개수</p>
   </div>
 </template>
 
