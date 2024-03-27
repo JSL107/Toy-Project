@@ -19,8 +19,8 @@ let router = useRouter();
           <img src="../../assets/logo/logo-removebg-preview.png" alt="" class="drawer-logo" @click="drawer =false"/>
         </template>
         <template #default>
-          <p class="lunch-roulette" @click="router.push('/lunch')">점심 뭐먹지</p>
-          <p class="vacation" @click="router.push('/vacation')">내 남은 휴가는</p>
+          <p class="lunch-roulette" @click="router.push('/lunch'); drawer=false">점심 뭐먹지</p>
+          <p class="vacation" @click="router.push('/vacation');  drawer=false">내 남은 휴가는</p>
         </template>
       </el-drawer>
     </div>
