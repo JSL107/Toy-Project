@@ -1,0 +1,58 @@
+.header {
+    width: 100vw;
+    border-bottom: 1px solid black;
+    background-color: #f0f0f0;
+
+    .item_section {
+        display: flex;
+        width: 1440px;
+        padding-right: 10%;
+        padding-left: 10%;
+
+        .title_section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            padding-right: 70%;
+            font-size: 25px;
+
+            .title {
+                font-family: TTHakgyoansimUndongjangL, serif;
+                color: black;
+                user-select: none;
+            }
+        }
+
+        .icon_section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            user-select: none;
+
+
+            .person {
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                margin-left: 16px;
+                margin-right: 16px;
+            }
+
+            .Notification {
+                user-select: none;
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                margin-left: 16px;
+                margin-right: 16px;
+            }
+        }
+
+
+    }
+}
+
+
+

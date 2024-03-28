@@ -1,0 +1,19 @@
+html {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 100%;
+}
+
+body {
+    margin: 0 0 0 0;
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: 'TTHakgyoansimUndongjangL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimUndongjangL.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
