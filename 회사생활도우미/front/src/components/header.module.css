@@ -1,26 +1,47 @@
 .header {
     width: 100vw;
     border-bottom: 1px solid black;
-    background-color: #f0f0f0;
 
     .item_section {
         display: flex;
-        width: 1440px;
-        padding-right: 10%;
-        padding-left: 10%;
+        width: 1640px;
+        padding-left: 8%;
+
+        .drawer_section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon_button {
+                width: 65px;
+                height: 65px;
+            }
+
+            .menu {
+                align-items: center;
+            }
+
+        }
+
+        .icon_button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         .title_section {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 250px;
-            padding-right: 70%;
+            padding-right: 65%;
             font-size: 25px;
 
             .title {
                 font-family: TTHakgyoansimUndongjangL, serif;
                 color: black;
                 user-select: none;
+                cursor: pointer;
             }
         }
 
