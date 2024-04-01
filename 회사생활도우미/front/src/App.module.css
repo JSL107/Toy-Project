@@ -1,0 +1,70 @@
+.main {
+    display: block;
+    width: 1440px;
+    margin-left: 8%;
+    height: 110vh;
+
+    .widget_section {
+        width: 100%;
+        height: 15vh;
+        background: cadetblue;
+        margin-bottom: 20px;
+
+        .weather_widget {
+            width: 40%;
+            height: 100%;
+            border-radius: 8px;
+            background: lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+    .content_section {
+        width: 100%;
+        height: 85%;
+        background: palevioletred;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+
+        .todo {
+            grid-row-start: 1;
+            grid-row-end: 1;
+            background: lightgray;
+            width: auto;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        .board {
+            grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 1;
+
+            width: auto;
+            height: 100%;
+            border-radius: 8px;
+            background: lightgray;
+        }
+
+        .calender {
+            grid-column-start: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            background: lightgray;
+
+            .schedule_title {
+                display: flex;
+                justify-content: center;
+                margin: 20px 0 0;
+            }
+        }
+    }
+}

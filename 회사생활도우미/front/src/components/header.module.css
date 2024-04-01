@@ -1,10 +1,10 @@
 .header {
-    width: 100vw;
+    width: 99vw;
     border-bottom: 1px solid black;
 
     .item_section {
         display: flex;
-        width: 1640px;
+        width: 1440px;
         padding-left: 8%;
 
         .drawer_section {
@@ -13,8 +13,10 @@
             align-items: center;
 
             .icon_button {
-                width: 65px;
+                width: 55px;
                 height: 65px;
+                cursor: pointer;
+
             }
 
             .menu {
