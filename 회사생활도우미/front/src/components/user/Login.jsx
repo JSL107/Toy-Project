@@ -10,7 +10,7 @@ import {
 import NaverLogo from '../../assets/naver_logo.png';
 import KakaoLogo from '../../assets/kakao_logo.png';
 import GoogleLogo from '../../assets/google_logo.png';
-import {useNavigate} from 'react-router-dom'; // 설치한 패키지
+import {Link, useNavigate} from 'react-router-dom'; // 설치한 패키지
 
 
 const {Title, Text} = Typography;
@@ -102,7 +102,7 @@ export function Login() {
                 </div>
                 <Text className={styles.forgotLink}>
                     <Button type="link" className={styles.signupButton}>
-                        회원 가입
+                        <Link to={'/sign-up'}>회원 가입</Link>
                     </Button>
                     <Button type="link" className={styles.findID}>계정 찾기</Button>
                     <span className={styles.separator} style={{userSelect: "none"}}>|</span>
