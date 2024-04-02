@@ -4,10 +4,37 @@ import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import {useRef, useState} from "react";
 import {ListItemButton, List, Input, Drawer} from '@mui/joy';
 import {Search, Menu} from '@mui/icons-material';
+import {Link} from "react-router-dom";
+import {Dropdown} from "antd";
+import {LockOutlined, SnippetsOutlined} from "@ant-design/icons";
 
 export default function Header() {
     const [open, setOpen] = useState(false);
+    const [isLogin, setIsLogin] = useState(false);
     const searchText = useRef();
+
+    const getLoginOrLogoutLink = (isLogin) => {
+        return isLogin ? <Link to={'/logout'}>로그아웃</Link> : <Link to={'/login'}>로그인</Link>
+    }
+
+    const goToMyPageorLogin = (isLogin) => {
+        return isLogin ? <Link to={'/my-page'}>마이페이지</Link> : <Link to={'/login'}>마이페이지</Link>
+    }
+
+    const items = [
+        {
+            key: '1',
+            label: getLoginOrLogoutLink(isLogin),
+            icon: <LockOutlined/>
+        },
+        {
+            key: '2',
+            label: goToMyPageorLogin(isLogin),
+            icon: <SnippetsOutlined/>,
+        },
+
+    ];
+
     const searchButtonClick = () => {
         console.log(searchText.current.value);
         searchText.current.value = '';
@@ -19,7 +46,7 @@ export default function Header() {
         }
     });
 
-    return (<div>
+    return <div>
         <header className={style.header}>
             <div className={style.item_section}>
                 <div className={style.drawer_section}>
@@ -77,13 +104,21 @@ export default function Header() {
                 </div>
 
                 <div className={style.title_section}>
-                    <h3 className={style.title}>회사 도우미</h3>
+                    <h3><Link to={'/'} className={style.title}>회사 도우미</Link></h3>
                 </div>
                 <div className={style.icon_section}>
-                    <PersonIcon className={style.person}/>
+                    <Dropdown
+                        menu={{
+                            items,
+                        }}
+                        placement={"bottomRight"}
+                    >
+                        <PersonIcon className={style.person}/>
+                    </Dropdown>
+
                     <NotificationsActiveIcon className={style.Notification}/>
                 </div>
             </div>
         </header>
-    </div>)
+    </div>;
 }

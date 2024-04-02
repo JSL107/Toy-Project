@@ -38,3 +38,27 @@
     font-size: 14px;
     color: #666666;
 }
+
+.addScheduleModalContent {
+    padding: 20px;
+}
+
+.addScheduleLabel {
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+.addScheduleInput {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.addScheduleSelect {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.addScheduleRangePicker {
+    width: 100%;
+}
