@@ -13,8 +13,8 @@ function App() {
                     <div className={style.weather_widget}>
                         <p>날씨</p>
                     </div>
-                    <div>
-
+                    <div className={style.dday}>
+                        <p>오늘의 일정</p>
                     </div>
                 </div>
                 <div className={style.content_section}>
