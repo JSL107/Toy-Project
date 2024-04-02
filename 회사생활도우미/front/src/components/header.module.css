@@ -13,8 +13,8 @@
             align-items: center;
 
             .icon_button {
-                width: 55px;
-                height: 65px;
+                width: 35px;
+                height: 45px;
                 cursor: pointer;
 
             }
@@ -25,11 +25,6 @@
 
         }
 
-        .icon_button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
 
         .title_section {
             display: flex;

@@ -1,7 +1,6 @@
 import style from './App.module.css'
-import NoticeCalendar from "./components/calendar/NoticeCalendar.jsx";
+import NoticeCalendar from "./pages/calendar/NoticeCalendar.jsx";
 import Header from "./components/Header.jsx";
-
 
 function App() {
 

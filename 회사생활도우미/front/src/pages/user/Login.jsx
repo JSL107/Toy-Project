@@ -18,7 +18,6 @@ const {Title, Text} = Typography;
 export function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [showPassword, setShowPassword] = useState(false);
     const [rememberMe, setRememberMe] = useState(false);
 
     const navigate = useNavigate();
@@ -29,10 +28,6 @@ export function Login() {
 
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
-    };
-
-    const handleTogglePasswordVisibility = () => {
-        setShowPassword(!showPassword);
     };
 
     const handleRememberMeChange = (event) => {
@@ -102,7 +97,7 @@ export function Login() {
                 </div>
                 <Text className={styles.forgotLink}>
                     <Button type="link" className={styles.signupButton}>
-                        <Link to={'/sign-up'}>회원 가입</Link>
+                        <Link to={'/user/sign-up'}>회원 가입</Link>
                     </Button>
                     <Button type="link" className={styles.findID}>계정 찾기</Button>
                     <span className={styles.separator} style={{userSelect: "none"}}>|</span>

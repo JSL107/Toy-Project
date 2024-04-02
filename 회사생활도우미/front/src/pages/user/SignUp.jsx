@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import {Form, Input, Button, Typography} from 'antd';
 import {UserOutlined, LockOutlined, MailOutlined, CalendarOutlined} from '@ant-design/icons';
@@ -134,7 +134,7 @@ const Signup = () => {
                 </Form.Item>
             </Form>
             <div className={styles.loginLink}>
-                이미 회원이신가요? <Link to="/login">로그인</Link>
+                이미 회원이신가요? <Link to="/user/login">로그인</Link>
             </div>
         </div>
     );

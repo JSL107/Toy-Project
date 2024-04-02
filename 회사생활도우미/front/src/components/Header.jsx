@@ -14,11 +14,11 @@ export default function Header() {
     const searchText = useRef();
 
     const getLoginOrLogoutLink = (isLogin) => {
-        return isLogin ? <Link to={'/logout'}>로그아웃</Link> : <Link to={'/login'}>로그인</Link>
+        return isLogin ? <Link to={'/user/logout'}>로그아웃</Link> : <Link to={'/user/login'}>로그인</Link>
     }
 
     const goToMyPageorLogin = (isLogin) => {
-        return isLogin ? <Link to={'/my-page'}>마이페이지</Link> : <Link to={'/login'}>마이페이지</Link>
+        return isLogin ? <Link to={'/user/my-page'}>마이페이지</Link> : <Link to={'/user/login'}>마이페이지</Link>
     }
 
     const items = [
