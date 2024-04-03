@@ -8,6 +8,10 @@ import {validateFormData} from "../../utils/function/UserValidCheck.js";
 const {Title} = Typography;
 
 const Signup = () => {
+    /* TODO 1 :: 이메일 인증 기능
+    *  TODO 2 :: 아이디 중복 체크
+    *  TODO 3 :: 생년월일 DatePicekr로 교체
+    *  */
     const [formData, setFormData] = useState({
         id: '',
         username: '',
