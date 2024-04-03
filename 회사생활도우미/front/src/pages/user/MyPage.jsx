@@ -3,7 +3,6 @@ import {Layout, Menu, Typography, Tabs, ConfigProvider} from 'antd';
 import styles from './MyPage.module.css';
 import {ProfileTab} from "../../components/tab/ProfileTab.jsx";
 import {PasswordTab} from "../../components/tab/PasswordTab.jsx";
-import {DeleteUserTab} from "../../components/tab/DeleteUserTab.jsx";
 import {AlarmSettingTab} from "../../components/tab/AlarmSettingTab.jsx";
 import {CalendarSettingTab} from "../../components/tab/CalendarSettingTab.jsx";
 import {Link} from "react-router-dom";
@@ -14,9 +13,8 @@ const {Content, Sider} = Layout;
 const tabItems = [
     {key: "1", children: <ProfileTab/>},
     {key: "2", children: <PasswordTab/>},
-    {key: "3", children: <DeleteUserTab/>},
-    {key: "4", children: <AlarmSettingTab/>},
-    {key: "5", children: <CalendarSettingTab/>}
+    {key: "3", children: <AlarmSettingTab/>},
+    {key: "4", children: <CalendarSettingTab/>}
 ];
 
 const menuItems = [
@@ -26,9 +24,8 @@ const menuItems = [
     *  TODO 4 :: 활동 정보 수집 기능 필요 */
     {key: "1", label: "프로필 정보 수정"},
     {key: "2", label: "비밀번호 변경"},
-    {key: "3", label: "계정 삭제"},
-    {key: "4", label: "알림 설정"},
-    {key: "5", label: "일정 관리"}
+    {key: "3", label: "알림 설정"},
+    {key: "4", label: "일정 관리"}
 ];
 
 const MyPage = () => {

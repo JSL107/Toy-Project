@@ -1,8 +1,9 @@
-import {Button, Form, DatePicker, notification, Typography, Input, Space} from "antd";
+import {Button, Form, DatePicker, notification, Typography, Input, Space, Modal} from "antd";
 import {MailOutlined, PhoneOutlined, UserOutlined} from "@ant-design/icons";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import styles from './Profile.module.css';
 import {validateFormData} from "../../utils/function/UserValidCheck.js";
+import {ConfirmOrCanCelModal} from "../modal/ConfirmOrCancelModal.jsx";
 
 const {Title} = Typography;
 
@@ -13,6 +14,15 @@ export function ProfileTab() {
         contact: '',
         email: ''
     });
+
+    const modalInfo = {
+        description: '탈퇴는 한 달 후에 이루어지며 로그인 시 회원을 복구할 수 있습니다.',
+        message: '계정이 삭제되었습니다.',
+        title: '탈퇴',
+        modalText: '정말 삭제하시겠습니까?'
+    };
+
+    const [isVisible, setIsVisible] = useState(false);
 
     const handleSaveProfile = () => {
         const errors = validateFormData(profileFormData);
@@ -35,6 +45,18 @@ export function ProfileTab() {
     const onChange = (date, dateString) => {
         setProfileFormData({...profileFormData, birthday: dateString});
     };
+
+    const handleDeleteAccount = () => {
+        setIsVisible(true);
+
+        //TODO :: 탈퇴가 완료 되었을때 출력될 수 있는 코드 작성
+        notification.info({
+            message: modalInfo.message,
+            description: modalInfo.description,
+        });
+
+    };
+    console.log(isVisible);
 
     return (
         <div className={styles.profileSection}>
@@ -72,6 +94,17 @@ export function ProfileTab() {
                     </Form.Item>
                 </div>
                 <Button type="default" onClick={handleSaveProfile} className={styles.button}>저장</Button>
+                <Button type={"link"} className={styles.deleteUser} onClick={handleDeleteAccount}>회원 탈퇴하기</Button>
+                {isVisible && (
+                    <ConfirmOrCanCelModal
+                        title={modalInfo.title}
+                        message={modalInfo.message}
+                        description={modalInfo.description}
+                        setIsVisible={setIsVisible}
+                        isVisible={isVisible}
+                        modalText={modalInfo.modalText}
+                    />
+                )}
             </Form>
         </div>
     )
