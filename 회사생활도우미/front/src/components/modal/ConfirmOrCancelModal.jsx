@@ -1,4 +1,4 @@
-import {Modal, notification} from "antd";
+import {Modal} from "antd";
 import PropTypes from "prop-types";
 
 ConfirmOrCanCelModal.propTypes = {

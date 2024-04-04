@@ -9,6 +9,7 @@ import {Dropdown} from "antd";
 import {LockOutlined, SnippetsOutlined} from "@ant-design/icons";
 
 export default function Header() {
+    //avatar
     const [open, setOpen] = useState(false);
     const [isLogin, setIsLogin] = useState(false);
     const searchText = useRef();

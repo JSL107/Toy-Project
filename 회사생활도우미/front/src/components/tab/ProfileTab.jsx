@@ -24,6 +24,7 @@ export function ProfileTab() {
 
     const [isVisible, setIsVisible] = useState(false);
 
+    // 후에 antd message로 바꿔보기
     const handleSaveProfile = () => {
         const errors = validateFormData(profileFormData);
 
@@ -56,7 +57,6 @@ export function ProfileTab() {
         });
 
     };
-    console.log(isVisible);
 
     return (
         <div className={styles.profileSection}>
