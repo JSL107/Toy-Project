@@ -3,6 +3,7 @@ import NoticeCalendar from "./pages/calendar/NoticeCalendar.jsx";
 import Header from "./components/Header.jsx";
 import {TODOList} from "./pages/TODO/TODOList.jsx";
 import {PreviewBoard} from "./pages/board/PreviewBoard.jsx";
+import {WeatherWidget} from "./pages/weather/WeatherWidget.jsx";
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
             <div className={style.main}>
                 <div className={style.widget_section}>
                     <div className={style.weather_widget}>
-                        <p>날씨</p>
+                        <WeatherWidget/>
                     </div>
                     <div className={style.dday}>
                         <p>오늘의 일정</p>
