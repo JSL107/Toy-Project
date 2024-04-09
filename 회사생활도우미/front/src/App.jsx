@@ -1,6 +1,8 @@
 import style from './App.module.css'
 import NoticeCalendar from "./pages/calendar/NoticeCalendar.jsx";
 import Header from "./components/Header.jsx";
+import {TODOList} from "./pages/TODO/TODOList.jsx";
+import {PreviewBoard} from "./pages/board/PreviewBoard.jsx";
 
 function App() {
 
@@ -18,10 +20,10 @@ function App() {
                 </div>
                 <div className={style.content_section}>
                     <div className={style.todo}>
-                        <p>TO-DO</p>
+                        <TODOList/>
                     </div>
                     <div className={style.board}>
-                        <p>게시글</p>
+                        <PreviewBoard/>
                     </div>
                     <div className={style.calender}>
                         <NoticeCalendar/>
