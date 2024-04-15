@@ -95,8 +95,8 @@ export default function Header() {
                             }}
 
                         >
-                            <ListItemButton><Link to={'/'} className={style.link}>Home</Link></ListItemButton>
-                            <ListItemButton><Link to={'/Board'} className={style.link}>Board</Link></ListItemButton>
+                            <a href={'/'} className={style.link}><ListItemButton className={style.link}>Home</ListItemButton></a>
+                            <Link to={'/Board'} className={style.link}><ListItemButton className={style.link}>Board</ListItemButton></Link>
                             <ListItemButton>Calender</ListItemButton>
                             <ListItemButton>Settings</ListItemButton>
                         </List>
