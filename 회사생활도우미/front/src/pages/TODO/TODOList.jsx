@@ -74,7 +74,7 @@ export function TODOList() {
     return (
         <div>
             <Space className={styles.header}>
-                <Title level={2} className={styles.title}>
+                <Title level={3} className={styles.title}>
                     오늘 할일
                 </Title>
                 {isEditing ? (
@@ -86,10 +86,10 @@ export function TODOList() {
                             disabled={!editingCheckedItems.length}
                             className={styles.deleteButton}
                         />
-                        <Button onClick={toggleEditMode}>취소</Button>
+                        <Button onClick={toggleEditMode} style={{marginTop:"10px"}}>취소</Button>
                     </Space>
                 ) : (
-                    <Button icon={<EditIcon/>} onClick={toggleEditMode}/>
+                    <Button style={{marginTop:"10px"}} icon={<EditIcon/>} onClick={toggleEditMode}/>
                 )}
             </Space>
             <div className={styles.contentSection}>

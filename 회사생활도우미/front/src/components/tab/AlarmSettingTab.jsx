@@ -1,6 +1,6 @@
 // AlarmSettingTab.jsx
 
-import {Checkbox, Divider, Typography, TimePicker, Space, Button} from "antd";
+import {Checkbox, Divider, Typography, TimePicker, Button} from "antd";
 import {useState} from "react";
 import styles from "./AlarmSetting.module.css";
 

@@ -17,8 +17,9 @@ function FullCalendarPage() {
         {
             title: 'Meeting 1',
             event: 'work',
-            start: '2024-03-31',
-            end: new Date(),
+            start: new Date('2024-03-31'),
+            end: new Date('2024-04-03'),
+            days: 4,
             backgroundColor: "#292eaa",
             borderColor: "#000"
         },
@@ -26,6 +27,13 @@ function FullCalendarPage() {
         {title: 'Meeting 3', event: 'work', start: new Date(), end: new Date(), backgroundColor: "#91c074"},
         {
             title: 'Meeting 4',
+            event: 'work',
+            start: new Date(),
+            end: new Date(),
+            backgroundColor: '#292eaa',
+        },
+        {
+            title: 'Meeting 5',
             event: 'work',
             start: new Date(),
             end: new Date(),
@@ -46,14 +54,17 @@ function FullCalendarPage() {
         setCalendarTitle(formattedDate);
 
         const clickedDateEvents = events.filter(event =>
-            dayjs(event.start).isSame(date, 'day') || dayjs(event.end).isSame(date, 'day')
+            (dayjs(date).isSame(event.start, 'day') || dayjs(date).isAfter(event.start, 'day')) &&
+            (dayjs(date).isSame(event.end, 'day') || dayjs(date).isBefore(event.end, 'day'))
         );
+
         if (clickedDateEvents.length > 0) {
             setHasEvent(clickedDateEvents);
         } else {
             setHasEvent([{title: '일정이 없습니다.'}]);
         }
     }
+
 
     const modalButton = () => (
         <Button shape={'circle'} type={"primary"} icon={<PlusOutlined/>} onClick={onClickAddSchedule}></Button>
@@ -64,6 +75,7 @@ function FullCalendarPage() {
         setIsAddScheduleModalOpen(true);
     }
 
+    //TODO :: 후에 구글 달력을 통해 한국 공휴일과 연결해주기
     return (
         <div className={styles.calendarWrapper}>
             <FullCalendar
@@ -71,13 +83,17 @@ function FullCalendarPage() {
                 plugins={[dayGridPlugin, interactionPlugin]}
                 dateClick={dateClick}
                 headerToolbar={{
-                    left: '', center: 'title', right: 'prev,next today',
+                    center: '', end: 'prev next today', start: 'title'
                 }}
                 events={events}
                 dayMaxEvents={true}
-                dayMaxEventRows={4}
+                dayMaxEventRows={2}
                 eventClick={dateClick}
                 displayEventTime={false}
+                viewClassNames={styles.calendarFont}
+                dayHeaderClassNames={styles.dayHeader}
+                eventClassNames={styles.event}
+                dayCellClassNames={styles.event}
             />
             <Modal open={isModalOpen} onCancel={onCloseClick} centered={true} title={calendarTitle}
                    footer={modalButton} zIndex={9999}>

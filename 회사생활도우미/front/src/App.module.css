@@ -1,3 +1,4 @@
+
 .main {
     display: block;
     width: 1440px;
@@ -6,16 +7,15 @@
 
     .widget_section {
         width: 100%;
-        height: 15vh;
+        height: 143px;
         margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
 
         .weather_widget {
             width: 40%;
-            height: 100%;
+            height: 143px;
             border-radius: 8px;
-            background: lightgray;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -23,9 +23,9 @@
 
         .dday {
             width: 40%;
-            height: 100%;
+            height: 143px;
             border-radius: 8px;
-            background: lightgray;
+            background: #F9EBC8;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -35,8 +35,9 @@
 
     .content_section {
         width: 100%;
-        height: 85%;
+        height: 780px;
         display: grid;
+        grid-gap: 10px;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 1fr;
 
@@ -44,10 +45,11 @@
         .todo {
             grid-row-start: 1;
             grid-row-end: 1;
-            background: lightgray;
             width: auto;
-            height: 100%;
+            height: auto;
             border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
 
         .board {
@@ -55,11 +57,10 @@
             grid-row-end: 2;
             grid-column-start: 1;
             grid-column-end: 1;
-
             width: auto;
-            height: 100%;
             border-radius: 8px;
-            background: lightgray;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
 
         .calender {
@@ -69,7 +70,6 @@
             width: 100%;
             height: 100%;
             border-radius: 8px;
-            background: lightgray;
 
             .schedule_title {
                 display: flex;

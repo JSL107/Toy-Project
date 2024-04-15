@@ -1,12 +1,29 @@
 /* NoticeCalender.module.css */
 
 .calendarWrapper {
-    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.dayHeader {
+    background: #A0BCC2;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    user-select: none;
+}
+
+.event {
+    cursor: pointer;
+}
+
+
+.calendarFont {
+    font-family: TTHakgyoansimUndongjangL, serif;
+    background-color: #f8f8f8;
 }
 
 .eventContainer {

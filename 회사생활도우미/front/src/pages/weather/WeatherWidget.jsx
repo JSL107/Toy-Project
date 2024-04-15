@@ -28,7 +28,6 @@ export const WeatherWidget = () => {
         })
 
     }
-    console.log(import.meta.env.VITE_OPEN_WEATHER_API);
     return (
         <div className={styles.weatherInfo}>
             <div className={styles.iconSection}>
@@ -43,8 +42,10 @@ export const WeatherWidget = () => {
                 <div className={styles.stateSection}>
                     <h3>{state.state}</h3>
                 </div>
-                <div className={styles.additionalInfoSection}>
+                <div className={styles.additionalInfoSectionDust}>
                     <p>미세먼지 : 나쁨</p>
+                </div>
+                <div className={styles.additionalInfoSectionUV}>
                     <p>자외선 {state.uv}</p>
                 </div>
 

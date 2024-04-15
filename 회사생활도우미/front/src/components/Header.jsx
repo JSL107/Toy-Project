@@ -37,7 +37,6 @@ export default function Header() {
     ];
 
     const searchButtonClick = () => {
-        console.log(searchText.current.value);
         searchText.current.value = '';
     }
     const onKeyDownEnter = ((e) => {
@@ -96,10 +95,10 @@ export default function Header() {
                             }}
 
                         >
-                            <ListItemButton>Home</ListItemButton>
-                            <ListItemButton>About</ListItemButton>
-                            <ListItemButton>Studio</ListItemButton>
-                            <ListItemButton>Contact</ListItemButton>
+                            <ListItemButton><Link to={'/'} className={style.link}>Home</Link></ListItemButton>
+                            <ListItemButton><Link to={'/Board'} className={style.link}>Board</Link></ListItemButton>
+                            <ListItemButton>Calender</ListItemButton>
+                            <ListItemButton>Settings</ListItemButton>
                         </List>
                     </Drawer>
                 </div>

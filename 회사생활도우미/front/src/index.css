@@ -17,3 +17,41 @@ body {
     font-weight: 300;
     font-style: normal;
 }
+
+.fc-toolbar-chunk {
+    font-family: TTHakgyoansimUndongjangL, serif;
+    font-size: 15px;
+
+    .fc-prev-button {
+        background-color: #A0BCC2;
+        border-color: #A0BCC2;
+        color: #747a7a;
+    }
+
+    .fc-prev-button:hover {
+        color: #747a7a;
+        background-color: #FEFBE7;
+        border-color: #FEFBE7;
+    }
+
+
+    .fc-next-button {
+        background-color: #A0BCC2;
+        border-color: #A0BCC2;
+        color: #747a7a;
+    }
+
+    .fc-next-button:hover{
+        color: #747a7a;
+        background-color: #FEFBE7;
+        border-color: #FEFBE7;
+    }
+
+
+    .fc-today-button {
+        background-color: #A0BCC2;
+        border-color: #A0BCC2;
+        color: #747a7a;
+    }
+
+}
