@@ -101,7 +101,8 @@
     grid-row:3;
     grid-column: 1;
     column-gap: 20px;
-    justify-content: center;
+    margin-left: 15px;
+    justify-content: left;
     align-items: center;
 
     & p {
