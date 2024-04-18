@@ -12,13 +12,6 @@ public class DBConnectionTests {
 
     @Test
     void dbConnectionTest() {
-        @Entity
-        @Table(name="test")
-        class temp {
-            @Id
-            private Long id;
-            private String name;
-        }
     }
 
 }
